@@ -180,3 +180,54 @@ body{
 .aliment-titulo{
     color: #fff;
 }
+#aliment-grafico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    width: 320px;
+    padding: 50px 0;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+.circular-progress{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #01B574;
+    background: conic-gradient(#01B574 3.6deg, #060C2B 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: #0C1A42;
+}
+.progress-value{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-progress{
+    color: #A0AEC0;
+    font-size: 1rem;
+}
+#porcent-progress{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+}
