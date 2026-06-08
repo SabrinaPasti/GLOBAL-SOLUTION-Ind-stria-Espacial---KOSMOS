@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -161,7 +162,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 7%;
-    margin-left: 5%;
     width: 75%;
     height: 80px;
     padding-left: 3%;
@@ -188,10 +188,9 @@ body{
 .container{
     display: flex;
     width: 320px;
-    padding: 50px 0;
     border-radius: 8px;
     flex-direction: column;
-    align-items: center;
+    padding-bottom: 10%;
     row-gap: 30px;
 }
 .circular-progress{
@@ -199,7 +198,7 @@ body{
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-color: #01B574;
+    background-color:  #01B574;
     background: conic-gradient(#01B574 3.6deg, #060C2B 0deg);
     display: flex;
     align-items: center;
@@ -231,3 +230,119 @@ body{
     font-weight: 900;
     color: #fff;
 }
+
+/*Mobile*/
+@media screen and (min-width: 360px) {
+    body{
+        background-color: #01B574;
+        padding-top: 10%;
+        height: 190vh;
+    }
+    #segunda-section{
+        background-color: cadetblue;
+        width: 85%;
+        height: 180vh;
+        gap: 0;
+    }
+    #text-segunda-section{
+        width: 95%;
+        height: 10%;
+    }
+    #titulo-section{
+        font-size: 1.9rem;
+    }
+    #avisos-section{
+        height: 9%;
+    }
+    #niveis-section{
+        flex-direction: column;
+        gap: 3%;
+        height: 72%;
+        margin-top: 0;
+    }
+    .quad-niveis{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 10%;
+    }
+    #quad-reserva{
+        height: 48vh;
+        padding-left: 9%;
+
+    }
+
+    #nome-niveis{
+        font-size: 1rem;
+    }
+    #porcent-niveis{
+        font-size: 1.5rem;
+    }
+    #text-niveis{
+        padding-top: 6%;
+        font-size: 1rem;
+        width: 90%;
+    }
+    #info-niveis{
+        padding-top: 6%;
+    }
+    #status-niveis{
+        padding-top: 4%;
+        width: 90%;
+        font-size: 0.9rem;
+    }
+    #aliment-prod{
+        flex-direction: column;
+        height: 74vh;
+
+
+    }
+    .aliment-niveis{
+        margin-top: 2%;
+    }
+    #aliment-text{
+        padding-left: 9%;
+
+    }
+    #prod-mensal{
+        margin-top: 5%;
+    }
+    .aliment-niveis{
+        width: 90%;
+        height: 13vh;
+        border-radius: 20px;
+        padding-top: 4%;
+        padding-left: 6%;
+        margin-left: 0;
+    }
+    .aliment-titulo{
+        font-size: 1.1rem;
+    }
+    .aliment-info{
+        width: 90%;
+    }
+    .aliment-dados{
+        font-size: 1rem;
+    }
+    #aliment-grafico{
+        width: 90%;
+        align-self: center;
+    }
+    .container{
+        padding-top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 413px) and (max-width:500px){
+    body{
+        background-color: burlywood;
+    }
+    #text-niveis{
+        padding-top: 0;
+        font-size: 1rem;
+        width: 90%;
+    }
+
+}
+/*Tablet*/
