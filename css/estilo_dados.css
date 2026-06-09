@@ -398,13 +398,19 @@ footer{
 
     }
     #segunda-section{
-        width: 90%;
+        width: 100%;
         height: 245vh;
         gap: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     #text-segunda-section{
-        width: 95%;
+        width: 90%;
         height: 33%;
+        padding-left: 5%;
+
     }
     #titulo-section{
         font-size: 1.8rem;
@@ -420,29 +426,38 @@ footer{
         width: 100%;
         height: 60%;
         display: flex;
-        border: 3px solid #E31A1A;
-        overflow-x: auto;
+        overflow: hidden;
         gap: 1em;
-    }
-    #avisos-section::-webkit-scrollbar{
-        display: none;
     }
     .group{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1em;
-        animation: spin 20s infinite linear;
-        padding-right: 1em;
+        animation: scroll 15s linear infinite;
     }
     .itens-aviso{
-        height: 5em;
-        width: 2px;
-        flex: 0 0 5em;
+        height: 90px;
+        width: 400px;
+        border-radius: 20px;
+        flex: 0 0 auto;
+        gap: 0;
     }
-    @keyframes spin{
-        from {translate: 0;}
-        to {translate: -100%}
+    .texto-avisos{
+        width: 75%;
+    }
+    .background-itens{
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-50%);
+        }
     }
     #niveis-section{
         flex-direction: column;
@@ -451,10 +466,10 @@ footer{
         padding-top: 2%;
     }
     .quad-niveis{
-        width: 100%;
         padding-left: 0;
         padding-top: 10%;
         border-radius: 30px;
+        width: 85%;
     }
     #quad-reserva{
         height: 110vh;
@@ -599,8 +614,46 @@ footer{
         width: 95%;
         height: 15%;
     }
+        #avisos-section{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        overflow: hidden;
+        gap: 1em;
+    }
+    .group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        animation: scroll 15s linear infinite;
+    }
+    .itens-aviso{
+        height: 90px;
+        width: 400px;
+        border-radius: 20px;
+        flex: 0 0 auto;
+        gap: 0;
+    }
+    .texto-avisos{
+        width: 75%;
+    }
+    .background-itens{
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-50%);
+        }
+    }
     #niveis-section{
         flex-direction: column;
+        height: 160vh;
     }
     .quad-niveis{
         width: 95%;
@@ -608,7 +661,7 @@ footer{
         border-radius: 30px;
     }
     #quad-reserva{
-        height: 195vh;
+        height: 45%;
         padding-left: 9%;
     }
     #nome-niveis{
@@ -629,7 +682,7 @@ footer{
         width: 85%;
     }
     #aliment-prod{
-        height: 285vh;
+        height: 55%;
         flex-direction: column;
         gap: 2%;
         align-items: center;
@@ -745,6 +798,43 @@ footer{
     #text-segunda-section{
         width: 95%;
         height: 10%;
+    }
+    #avisos-section{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        overflow: hidden;
+        gap: 1em;
+    }
+    .group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        animation: scroll 15s linear infinite;
+    }
+    .itens-aviso{
+        height: 90px;
+        width: 400px;
+        border-radius: 20px;
+        flex: 0 0 auto;
+        gap: 0;
+    }
+    .texto-avisos{
+        width: 75%;
+    }
+    .background-itens{
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-50%);
+        }
     }
     #niveis-section{
         flex-direction: column;
