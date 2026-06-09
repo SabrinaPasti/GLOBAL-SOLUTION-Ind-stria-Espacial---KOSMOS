@@ -9,10 +9,11 @@
 body{
     background-color: #010828;
     width: 100%;
-    height: 100%;	
+    height: 180vh;	
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 4%;
+    align-items: center;
 }
 #segunda-section{
     width: 80vw;
@@ -22,13 +23,28 @@ body{
     gap: 2%;
 }
 #text-segunda-section{
-    width: 35%;
+    width: 65%;
     height: 20%;
     display: flex;
     flex-direction: column;
     gap: 5%;
     padding-top: 2%;
     color: #fff;
+}
+#titulo-section{
+    font-size: 2.5rem;
+    font-family: vinila, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.2rem;
+}
+#text-section{
+    font-size: 1.5rem;
+    width: 75%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 2.2rem;
+
 }
 #titulo-cor{
     color: #0075FF;
@@ -41,6 +57,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 6.5%;
+    margin-top: 4%;
 }
 .itens-aviso{
     width: 20%;
@@ -52,6 +69,8 @@ body{
     align-items: center;
     justify-content: center;
     gap: 1%;
+    font-family: "Inter", sans-serif;
+
 }
 .texto-avisos{
     display: flex;
@@ -65,6 +84,7 @@ body{
 .titulo-avisos{
     color: #A0AEC0;
     font-size: 0.9rem;
+    font-weight: 600;
 }
 .dados-avisos{
     display: flex;
@@ -74,16 +94,19 @@ body{
 }
 .porcen-avisos{
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.2rem;    
+    font-weight: 600;
 }
 .info-avisos, #info-aviso-ox{
     font-size: 0.9rem;
 }
 .info-avisos{
     color: #01B574;
+    font-weight: 600;
 }
 #info-aviso-ox{
     color: #E31A1A;
+    font-weight: 600;
 }
 .bi-leaf, .bi-wind, .bi-droplet, .bi-lightbulb{
     color: #fff;
@@ -109,7 +132,7 @@ body{
 }
 .quad-niveis{
     width: 50%;
-    height: 85%;
+    height: 95%;
     background-color: #0C1A42;
     border-radius: 7px;
     display: flex;
@@ -127,15 +150,24 @@ body{
 #nome-niveis{
     font-size: 0.9rem;
     color:  #A0AEC0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+
 }
 #porcent-niveis{
     font-size: 1.8rem;
     color: #fff;
+    font-family: vinila, sans-serif;
+    font-style: normal;
+    font-weight: 600;
 }
 #text-niveis{
     width: 55%;
     font-size: 1.1rem;
     color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+
 }
 #info-niveis{
     color:  #A0AEC0;
@@ -143,42 +175,59 @@ body{
     flex-direction: column;
     gap: 8%;
     padding-top: 2%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+
 }
 #status-niveis{
     padding-top: 1%;
     font-size: 1.1rem;
     color: #01B574;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+
 }
 #aliment-prod{
     display: flex;
     flex-direction: row;
+    gap: 15%;
 }
 #aliment-text{
     display: flex;
     flex-direction: column;
     gap: 5%;
+    width: 80%;
 }
 .aliment-niveis{
     display: flex;
     flex-direction: column;
     gap: 7%;
-    width: 75%;
+    width: 95%;
     height: 80px;
-    padding-left: 3%;
-    padding-top: 2%;
+    padding-left: 5%;
+    padding-top: 3%;
     border-radius: 8px;
     background-color: #060C2B;
 }
 .aliment-info{
     font-size: 0.9rem;
     color:  #A0AEC0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    width: 85%;
+
 }
 .aliment-dados{
     font-size: 1.2rem;
     color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
 }
 .aliment-titulo{
     color: #fff;
+    font-family: vinila, sans-serif;
+    font-style: normal;
+    font-weight: 600;
 }
 #aliment-grafico{
     display: flex;
@@ -221,7 +270,9 @@ body{
 }
 .info-progress{
     color: #A0AEC0;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
 }
 #porcent-progress{
     margin-top: 4%;
@@ -229,27 +280,137 @@ body{
     font-size: 2.2rem;
     font-weight: 900;
     color: #fff;
+    font-family: vinila, sans-serif;
+    font-style: normal;
+    font-weight: 600;
 }
+#suport-section{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+    margin-bottom: 18%;
+}
+#titulo-suport{
+    font-size: 2.7rem;
+    width: 45%;
+    text-align: center;
+    color: #fff;
+    font-family: vinila, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+.blue-part{
+    color: #0075FF;
+}
+#texto-suport{
+    font-size: 1.5rem;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 2.2rem;
 
+
+}
+#suport-bold{
+    font-weight: 700;
+}
+#envir-email{
+    background: linear-gradient(83deg,rgba(64, 69, 110, 1) 17%, rgba(2, 8, 63, 1) 74%);
+    width: 35%;
+    height: 17%;
+    border-radius: 60px;
+    border: 3px solid #02226A;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1%;
+    margin-top: 2%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+#texto-enviar{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    font-size: 1.2rem;
+    color: #fff;
+}
+#button-enviar{
+    width: 45%;
+    height: 110%;
+    background-color: #0075FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    border-radius: 60px;
+    border: 2px solid #02226A;
+    border-right: none;
+    font-size: 1.2rem;
+    color: #fff;
+
+}
+#termos-cond{
+    font-size: 1.1rem;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+footer{
+    background-color: #020738;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    gap: 45%;
+    align-items: center;
+    justify-content: center;
+}
+#logo-empresa{
+    width: 260px;
+}
+#copyright{
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
 /*Mobile*/
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 340px) and (max-width:399px){
     body{
-        background-color: #01B574;
-        padding-top: 10%;
-        height: 190vh;
+        padding-top: 2%;
+        height: 410vh;
+        gap: 2%;
+
     }
     #segunda-section{
-        background-color: cadetblue;
         width: 85%;
-        height: 180vh;
+        height: 225vh;
         gap: 0;
     }
     #text-segunda-section{
         width: 95%;
-        height: 10%;
+        height: 33%;
     }
     #titulo-section{
-        font-size: 1.9rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
+
+    }
+    #text-section{
+        width: 105%;
+        font-size: 1.2rem;
+        margin-bottom: 3%;
     }
     #avisos-section{
         height: 9%;
@@ -258,15 +419,16 @@ body{
         flex-direction: column;
         gap: 3%;
         height: 72%;
-        margin-top: 0;
+        padding-top: 2%;
     }
     .quad-niveis{
         width: 100%;
         padding-left: 0;
         padding-top: 10%;
+        border-radius: 30px;
     }
     #quad-reserva{
-        height: 48vh;
+        height: 110vh;
         padding-left: 9%;
 
     }
@@ -283,7 +445,7 @@ body{
         width: 90%;
     }
     #info-niveis{
-        padding-top: 6%;
+        padding-top: 4%;
     }
     #status-niveis{
         padding-top: 4%;
@@ -292,9 +454,8 @@ body{
     }
     #aliment-prod{
         flex-direction: column;
-        height: 74vh;
-
-
+        height: 145vh;
+        gap: 8%;
     }
     .aliment-niveis{
         margin-top: 2%;
@@ -307,8 +468,8 @@ body{
         margin-top: 5%;
     }
     .aliment-niveis{
-        width: 90%;
-        height: 13vh;
+        width: 115%;
+        height: 15vh;
         border-radius: 20px;
         padding-top: 4%;
         padding-left: 6%;
@@ -328,21 +489,357 @@ body{
         align-self: center;
     }
     .container{
-        padding-top: 5%;
+        padding-top: 0;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    #suport-section{
+        width: 90%;
+        height: 30%;
+        margin-bottom: 18%;
+    }
+    #titulo-suport{
+        font-size: 1.7rem;
+        width: 85%;
+        line-height: 2.5rem;
+    }
+    #texto-suport{
+        font-size: 1.2rem;
+        width: 90%;
+        line-height: 1.7rem;
+    }
+    #envir-email{
+        width: 90%;
+        height: 6%;
+        border-radius: 60px;
+        padding-left: 1%;
+        margin-top: 2%;
+    }
+    #texto-enviar{
+        font-size: 0.9rem;
+    }
+    #button-enviar{
+        border-radius: 55px;
+        font-size: 0.9rem;
+    }
+    #termos-cond{
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 1.7rem;
+    }
+    footer{
+        height: 10%;
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+        gap: 7%;
+    }
+    #logo-empresa{
+        width: 160px;
+    }
+    #copyright{
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        width: 70%;
+    }
 }
-@media screen and (min-width: 413px) and (max-width:500px){
+@media screen and (min-width: 400px) and (max-width:699px){
     body{
-        background-color: burlywood;
+        padding-top: 5%;
+        height: 410vh;
+        gap: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #segunda-section{
+        width: 85%;
+        height: 265vh;
+        gap: 0;
+    }
+    #titulo-section{
+        font-size: 2.2rem;
+    }
+    #text-section{
+        font-size: 1.2rem;
+    }
+    #text-segunda-section{
+        width: 95%;
+        height: 15%;
+    }
+    #niveis-section{
+        flex-direction: column;
+    }
+    .quad-niveis{
+        width: 95%;
+        padding-top: 8%;
+        border-radius: 30px;
+    }
+    #quad-reserva{
+        height: 195vh;
+        padding-left: 9%;
+    }
+    #nome-niveis{
+        font-size: 1.2rem;
+    }
+    #porcent-niveis{
+        font-size: 1.6rem;
     }
     #text-niveis{
-        padding-top: 0;
-        font-size: 1rem;
-        width: 90%;
+        font-size: 1.1rem;
+        width: 85%;
     }
-
+    #info-niveis{
+        font-size: 1.1rem;
+    }
+    #status-niveis{
+        font-size: 1.2rem;
+        width: 85%;
+    }
+    #aliment-prod{
+        height: 285vh;
+        flex-direction: column;
+        gap: 2%;
+        align-items: center;
+        justify-content: center;
+    }
+    #aliment-text{
+        width: 100%;
+        height: 130%;
+        padding-left: 9%;
+    }
+    .aliment-niveis{
+        width: 90%;
+        height: 30%;
+    }
+    .aliment-titulo{
+        font-size: 1.5rem;
+    }
+    .aliment-info{
+        font-size: 1.1rem;
+    }
+    .aliment-dados{
+        font-size: 1.4rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-progress{
+        font-size: 1.2rem;
+    }
+    .circular-progress{
+        height: 230px;
+        width: 230px;
+    }
+    .circular-progress::before{
+        height: 195px;
+        width: 195px;
+    }
+    #suport-section{
+        width: 90%;
+        height: 20%;
+        margin-bottom: 18%;
+    }
+    #titulo-suport{
+        font-size: 2rem;
+        width: 85%;
+        line-height: 2.5rem;
+    }
+    #texto-suport{
+        font-size: 1.2rem;
+        width: 90%;
+        line-height: 1.7rem;
+    }
+    #envir-email{
+        width: 90%;
+        height: 6%;
+        border-radius: 60px;
+        padding-left: 1%;
+        margin-top: 2%;
+    }
+    #texto-enviar{
+        font-size: 1.1rem;
+    }
+    #button-enviar{
+        border-radius: 55px;
+        font-size: 1.1rem;
+    }
+    #termos-cond{
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 1.7rem;
+    }
+    footer{
+        height: 10%;
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+        gap: 7%;
+    }
+    #logo-empresa{
+        width: 160px;
+    }
+    #copyright{
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.7rem;
+        width: 70%;
+    }
 }
 /*Tablet*/
+@media screen and (min-width:700px) and (max-width:1000px){
+    body{
+        padding-top: 5%;
+        height: 410vh;
+        gap: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #segunda-section{
+        width: 85%;
+        height: 265vh;
+        gap: 0;
+    }
+    #titulo-section{
+        font-size: 2.4rem;
+    }
+    #text-section{
+        font-size: 1.6rem;
+    }
+    #text-segunda-section{
+        width: 95%;
+        height: 10%;
+    }
+    #niveis-section{
+        flex-direction: column;
+    }
+    .quad-niveis{
+        width: 95%;
+        padding-top: 8%;
+        border-radius: 30px;
+    }
+    #quad-reserva{
+        height: 245vh;
+        padding-left: 9%;
+        gap: 4%;
+    }
+    #nome-niveis{
+        font-size: 1.5rem;
+    }
+    #porcent-niveis{
+        font-size: 2.4rem;
+    }
+    #text-niveis{
+        font-size: 1.5rem;
+        width: 85%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        margin-top: 4%;
+    }
+    #info-niveis{
+        font-size: 1.4rem;
+    }
+    #status-niveis{
+        font-size: 1.6rem;
+        width: 85%;
+    }
+    #aliment-prod{
+        height: 310vh;
+        flex-direction: column;
+        gap: 2%;
+        align-items: center;
+        justify-content: center;
+    }
+    #aliment-text{
+        width: 100%;
+        height: 130%;
+        padding-left: 9%;
+    }
+    .aliment-niveis{
+        width: 90%;
+        height: 30%;
+    }
+    .aliment-titulo{
+        font-size: 1.8rem;
+    }
+    .aliment-info{
+        font-size: 1.3rem;
+    }
+    .aliment-dados{
+        font-size: 1.7rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-progress{
+        font-size: 1.4rem;
+    }
+    .circular-progress{
+        height: 290px;
+        width: 290px;
+    }
+    .circular-progress::before{
+        height: 240px;
+        width: 240px;
+    }
+    #suport-section{
+        width: 80%;
+        height: 20%;
+        margin-bottom: 18%;
+    }
+    #titulo-suport{
+        font-size: 2.4rem;
+        width: 85%;
+        line-height: 2.5rem;
+    }
+    #texto-suport{
+        font-size: 1.5rem;
+        width: 90%;
+        line-height: 1.7rem;
+    }
+    #envir-email{
+        width: 90%;
+        height: 8%;
+        border-radius: 60px;
+        padding-left: 1%;
+        margin-top: 2%;
+    }
+    #texto-enviar{
+        font-size: 1.3rem;
+    }
+    #button-enviar{
+        border-radius: 55px;
+        font-size: 1.3rem;
+    }
+    #termos-cond{
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.7rem;
+    }
+    footer{
+        height: 10%;
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+        gap: 7%;
+    }
+    #logo-empresa{
+        width: 210px;
+    }
+    #copyright{
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        width: 70%;
+    }
+}
