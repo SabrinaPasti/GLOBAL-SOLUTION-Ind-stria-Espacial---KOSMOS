@@ -1,25 +1,175 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/usx8zfw.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/monitore.css">
-    lin
+    <link rel="stylesheet" href="css/monitore-2.css">
+
 
     <title>Global Solution - KOSMOS</title>
 </head>
+
 <body>
-    <h1>teste</h1>
+    <header>
+        <div class="container">
+            <h1><img src="/midia/logo-kosmos.png" alt="logomarca kosmos"></h1>
+        </div>
+    </header>
+    <div class="pre-video" id="preVideo">
+        <video id="introVideo" src="/midia/intro.mp4" muted playsinline autoplay preload="auto"></video>
+    </div>
+    <div class="main-content" id="mainContent">
+        <section class="video-section section-one">
+            <video id="kosmosVideo" src="/midia/video.mp4" muted playsinline preload="auto"></video>
+            <div class="container">
+                <div class="text">
+                    <h2>Gestão inteligente para a <span>próxima fronteira da humanidade</span></h2>
+                    <p>Monitore <b>energia, água, oxigênio, alimentos e condições ambientais</b> em tempo real através
+                        de uma plataforma desenvolvida para garantir a operação segura e sustentável de uma colônia
+                        lunar.</p>
+                    <a href="#">Ir para Dashboard</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section section-two">
+            <video id="kosmosVideoScroll" src="/midia/video.mp4" muted playsinline preload="auto"></video>
+            <div class="container">
+                <div class="content-left">
+                    <p>Nossa plataforma centraliza informações críticas da colônia em uma única interface, permitindo
+                        acompanhar indicadores, identificar riscos e agir preventivamente antes que pequenas falhas se
+                        tornem grandes problemas.</p>
+                    <a href="#">Ir para Dashboard</a>
+                </div>
+                <div class="content-right">
+                    <h2>Controle total dos recursos que <span>mantêm a colônia viva</span></h2>
+                    <p>Em um ambiente onde cada recurso é limitado, tomar decisões rápidas e precisas não é uma opção, é
+                        uma necessidade.</p>
+                </div>
+            </div>
+        </section>
+        <section class="graph">
+            <div class="container">
+                <div class="box">
+                    <div class="energy">
+                        <h3>Consumo de energia nas últimas 24h</h3>
+                        <p>(+5%) a mais <span>que na última semana</span></p>
+                        <img src="./midia/Graph.svg" alt="dash">
+                    </div>
+                    <div class="box__div">
+                        <div class="water">
+                            <img src="./midia/Graph-line.svg" alt="dash">
+                            <h3>Reaproveitamento de Água</h3>
+                            <p><span>(+4,8%)</span> em relação ao mês anterior</p>
+                            <div class="amount">
+                                <div class="card">
+                                    <img src="./midia/Icon R.svg" alt="Ícone de água">
+                                    <div>
+                                        <p>Água Recuperada</p>
+                                        <h4>32.984 L</h4>
+                                        <img src="./midia/Progress-1.svg" alt="Progress bar">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./midia/Icon H.svg" alt="Ícone de casa">
+                                    <div>
+                                        <p>Água Tratada</p>
+                                        <h4>2,42 mi L</h4>
+                                        <img src="./midia/Progress-2.svg" alt="Progress bar">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./midia/Icon R.svg" alt="Ícone de água">
+                                    <div>
+                                        <p>Economia Hídrica</p>
+                                        <h4>2.400 L</h4>
+                                        <img src="./midia/Progress-3.svg" alt="Progress bar">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./midia/Icon Recycle.svg" alt="Ícone de reciclagem">
+                                    <div>
+                                        <p>Ciclos de Reciclagem</p>
+                                        <h4>320</h4>
+                                        <img src="./midia/Progress-4.svg" alt="Progress bar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert">
+                            <h3>Alertas recentes</h3>
+                            <div class="notification">
+                                <img src="./midia/Icon-nav.svg" alt="Ícone Nave">
+                                <div>
+                                    <h5>Sistema de suporte à vida operando normalmente</h5>
+                                    <p>02 JUN · 14:32 UTC</p>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <img src="./midia/Icon-water.svg" alt="Ícone Água">
+                                <div>
+                                    <h5>Reservatórios mantêm autonomia de 78 dias</h5>
+                                    <p>02 JUN · 10:14 UTC</p>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <img src="./midia/Icon-raid.svg" alt="Ícone Raio">
+                                <div>
+                                    <h5>Pico energético registrado durante manutenção externa</h5>
+                                    <p>01 JUN · 22:48 UTC</p>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <img src="./midia/Icon-flower.svg" alt="Ícone Flor">
+                                <div>
+                                    <h5>Produção agrícola supera meta mensal em 8%</h5>
+                                    <p>01 JUN · 17:26 UTC</p>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <img src="./midia/icon-recycle.svg" alt="Ícone Reciclagem">
+                                <div>
+                                    <h5>Reciclagem hídrica alcança eficiência máxima do ciclo</h5>
+                                    <p>31 MAI · 13:05 UTC</p>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <img src="./midia/Icon-air.svg" alt="Ícone Ar">
+                                <div>
+                                    <h5>Níveis de oxigênio permanecem acima de 95%</h5>
+                                    <p>31 MAI · 07:42 UTC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <footer>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
-    
+
+
+
 </body>
+
 </html>
